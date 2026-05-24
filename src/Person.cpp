@@ -1,5 +1,7 @@
 #include "../include/Person.h"
 #include <cstdlib>
+#include <iostream>
+using namespace std;
 
 Person::Person(int id,
                double skepticism,
@@ -31,8 +33,8 @@ void Person::evaluateBelief(double senderInfluence) {
     }
 
     double beliefScore =
-        (trust * senderInfluence * exposureCount)
-        - skepticism;
+    (trust * senderInfluence * 0.5 * exposureCount)
+    - (skepticism * 0.8);
 
     double randomValue =
         static_cast<double>(rand()) / RAND_MAX;
@@ -40,6 +42,13 @@ void Person::evaluateBelief(double senderInfluence) {
     if (beliefScore > randomValue) {
         state = State::Believer;
     }
+
+
+    cout << "Belief score: "
+     << beliefScore
+     << " Random: "
+     << randomValue
+     << endl;
 }
 
 bool Person::shareRumor() {
