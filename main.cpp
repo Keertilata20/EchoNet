@@ -14,7 +14,7 @@ int main() {
 
     Network network;
 
-    Person p1(0,0.3,0.8,0.7,0.8);
+    Person p1(0,0.1,1.0,0.9,1.0);
     Person p2(1,0.5,0.5,0.4,0.7);
     Person p3(2,0.2,0.9,0.8,0.9);
 

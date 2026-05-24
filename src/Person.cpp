@@ -33,15 +33,16 @@ void Person::evaluateBelief(double senderInfluence) {
     }
 
     double beliefScore =
-    (trust * senderInfluence * 0.5 * exposureCount)
-    - (skepticism * 0.8);
+    (trust * senderInfluence * exposureCount)
+    -
+    (skepticism * 0.4);
 
     double randomValue =
         static_cast<double>(rand()) / RAND_MAX;
 
     if (beliefScore > randomValue) {
-        state = State::Believer;
-    }
+    state = State::Believer;
+}
 
 
     cout << "Belief score: "

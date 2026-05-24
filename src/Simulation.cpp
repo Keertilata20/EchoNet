@@ -48,6 +48,12 @@ void Simulation::run(int startPersonId) {
                 for (int neighborId :
                      neighbors) {
 
+                        cout << "Person "
+     << neighborId
+     << " heard rumor from Person "
+     << person.getId()
+     << endl;
+
                     people[neighborId]
                         .hearRumor();
 
