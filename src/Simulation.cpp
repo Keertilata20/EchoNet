@@ -62,6 +62,61 @@ void Simulation::run(int startPersonId) {
                             person.getInfluence());
                 }
             }
+            
         }
+        int unaware = 0;
+int considering = 0;
+int believer = 0;
+int sharer = 0;
+int rejector = 0;
+
+for (Person& p : people) {
+
+    switch (p.getState()) {
+
+        case State::Unaware:
+            unaware++;
+            break;
+
+        case State::Considering:
+            considering++;
+            break;
+
+        case State::Believer:
+            believer++;
+            break;
+
+        case State::Sharer:
+            sharer++;
+            break;
+
+        case State::Rejector:
+            rejector++;
+            break;
+    }
+}
+
+cout << "\nStats:\n";
+cout << "Unaware: "
+     << unaware
+     << endl;
+
+cout << "Considering: "
+     << considering
+     << endl;
+
+cout << "Believers: "
+     << believer
+     << endl;
+
+cout << "Sharers: "
+     << sharer
+     << endl;
+
+cout << "Rejectors: "
+     << rejector
+     << endl;
+
+
     }
 }
