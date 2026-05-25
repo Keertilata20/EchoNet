@@ -3,7 +3,7 @@
 
 EchoNet is a C++ simulation project that models how information and rumors spread through realistic social networks.
 
-Unlike simple random-spread models, EchoNet represents social systems with clusters, influencers and individual behavioral traits. People in the network do not instantly believe information. Instead, belief develops through repeated exposure, trust, skepticism, and social influence.
+Unlike simple random-spread models, EchoNet represents social systems with clusters, influencers and individual behavioral traits. People in the network do not instantly believe information. Instead, belief develops through repeated exposure, trust, skepticism and social influence.
 
 The project explores how ideas propagate, amplify, or fade across connected communities.
 
