@@ -28,7 +28,7 @@ The project explores how ideas propagate, amplify, or fade across connected comm
 
 ## 🧠 Simulation Model
 
-Each person in the network acts as a node with unique behavioral characteristics.
+Each person in the network acts as a node with unique behavioural characteristics.
 
 ### Possible States
 
